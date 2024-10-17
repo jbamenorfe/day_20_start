@@ -29,6 +29,11 @@ while game_is_on:
     
     snake.move()
 
+    screen.listen()         # Listen to key press events
+    screen.onkey(fun=snake.right, key="Right")
+    screen.onkey(fun=snake.up, key="Up")
+    screen.onkey(fun=snake.left, key="Left")
+    screen.onkey(fun=snake.down, key="Down")
 
 
 
