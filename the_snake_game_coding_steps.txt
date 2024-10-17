@@ -1,0 +1,11 @@
+The Snake Game Program
+
+The following seven (7) steps will be followed in solving the Snake Game program.
+
+(1) Create a snake body
+(2) Move the snake
+(3) Control the snake
+(4) Put food on the screen at random positions, and detect snake's collission with the food.
+(5) Create a scoreboard
+(6) Detect snake's collission with wall; to end the Game
+(7) Detect snake's collission with its own tail to end the Game
