@@ -1,11 +1,17 @@
 # Snake class that provides template for creating snake objects
+
+# Declare constant variables to hold the snake positions
+STARTING_POSITIONS = [(0,0), (-20,0),(-40,0)]
+MOVE_DISTANCE = 20
+
 from turtle import Turtle
 class Snake:
     def __init__(self):
-        self.snake_body_segment_positions = [(0,0), (-20,0),(-40,0)]
+        self.create_snake()
+    
+    def create_snake(self):
         self.snake_body = []
-
-        for position in self.snake_body_segment_positions:
+        for position in STARTING_POSITIONS:
             new_body_segment = Turtle(shape="square")
             new_body_segment.color("white")
             new_body_segment.penup()
